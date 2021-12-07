@@ -1,5 +1,5 @@
 ﻿-- Показать список покупателей (CustomerID), которые имеют несколько дат оформления заказа (OrderDate), из таблицы Sales.SalesOrderHeader, используя SELF JOIN.
-SELECT s1.CustomerID
+SELECT DISTINCT s1.CustomerID
 	, s1.OrderDate
 FROM Sales.SalesOrderHeader AS s1
 INNER JOIN Sales.SalesOrderHeader AS s2

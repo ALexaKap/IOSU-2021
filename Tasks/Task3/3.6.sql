@@ -1,5 +1,5 @@
 ﻿-- Показать список продавцов (SalesPersonID из Sales.SalesOrderHeader), которые имеют нескольких покупателей, CustomerID которых начинается с 3, используя SELF JOIN.
-SELECT s1.SalesPersonID
+SELECT DISTINCT s1.SalesPersonID
 	, s1.CustomerID
 FROM Sales.SalesOrderHeader AS s1
 INNER JOIN Sales.SalesOrderHeader AS s2
