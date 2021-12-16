@@ -9,5 +9,5 @@ INNER JOIN Content AS c
 ON q.QualificationID = c.QualificationID
 INNER JOIN [Case] AS CA
 ON CA.ContentID = c.ContentID --;
-WHERE q.Qualification LIKE '%Средней тяжести%'; 
 --WHERE a.Article LIKE '%ст.105%'; 
+WHERE q.Qualification LIKE '%Средней тяжести%'; 
